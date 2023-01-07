@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="calc.css">
+    </head>
+
+    <body>
+        <script src="calc.js" async defer></script>
+        <div class="calc-body">
+            <div class="monitor">
+                <div data-current-operation-text class="current-operand"></div>
+                <div data-previous-operation-text class="previous-operand"></div>
+            </div>
+            <div class="btns-container">
+                <div class="nb-buttons">
+                    <button data-number class="number">9</button>
+                    <button data-number class="number">8</button>
+                    <button data-number class="number">7</button>
+                    <button data-number class="number">6</button>
+                    <button data-number class="number">5</button>
+                    <button data-number class="number">4</button>
+                    <button data-number class="number">3</button>
+                    <button data-number class="number">2</button>
+                    <button data-number class="number">1</button>
+                    <button data-number class="number">0</button>
+                    <button data-number class="number">.</button>
+                    <button data-all-clear class="reset">AC</button>
+                </div>
+                <div class="op-btn">
+                    <button data-operation class="op">+</button>
+                    <button data-operation class="op">-</button>
+                    <button data-operation class="op">x</button>
+                    <button data-operation class="op">÷</button>
+                    <button data-delete class="op">Del</button>
+                    <button data-equal class="op">=</button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

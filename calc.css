@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
+
+
+body{
+    background-color: #D7D9CE;
+}
+*{
+    font-size: 62.5%;
+}
+.calc-body{
+    width : 40rem;
+    height : 55rem;
+    background-color: #040404;
+    margin: auto;
+    margin-top: 10rem;
+    box-shadow: 0px -2px 20px 4px #645f5f;
+}
+.monitor{
+    width: 100%;
+    height: 10rem;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    overflow:scroll;
+}
+.current-operand{
+    width: auto;
+    font-size: 3.6rem;
+    font-weight: bold;
+    font-family: 'Cairo';
+}
+.previous-operand{
+    width: auto;
+    font-size: 2.6rem;
+    font-weight: bold;
+    font-family: 'Cairo';
+}
+.btns-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.nb-buttons{
+    width: 76% ;
+    height: calc(100% - 10.2rem);
+    display: inline-block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2rem;
+}
+.op-btn{
+    width: calc(100% - 76%);
+    height:calc(100% - 10rem);
+    position: relative;
+    background-color: #E86500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.number,.reset{
+    width: 7rem;
+    height: 4rem;
+    font-size: 2.8rem;
+    font-family: 'Cairo';
+    font-weight: bold;
+    border: none;
+    margin-top: 4rem;
+    color: #D7D9CE;
+    background-color: transparent;
+}
+.number,.reset:hover{
+    cursor: pointer;
+}
+.op{
+    width: 7rem;
+    height: auto;
+    border: none;
+    font-size: 2.4rem;
+    font-family: 'Cairo';
+    font-weight: bold;
+    background-color: transparent;
+}
+.op:hover{
+    cursor: pointer;
+}
